@@ -19,7 +19,7 @@ const Player = ({ initialName, symbol, isActive }) => {
     <li className={isActive ? 'active' : undefined}>
       <span className='player'>
         {editablePlayerName}
-        <span className='player-name'>{symbol}</span>
+        <span className='player-symbol'>{symbol}</span>
       </span>
       <button onClick={handleEditClick}>{isEditing ? 'Save' : 'Edit'}</button>
     </li>
